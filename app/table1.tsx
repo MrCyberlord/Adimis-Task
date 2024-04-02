@@ -25,7 +25,9 @@ export default function Home() {
 
     fetchData()
   }, [])
+
 console.log(users)
+
   return (
     <div>
       <h1>Users</h1>
