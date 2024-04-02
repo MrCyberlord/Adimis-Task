@@ -26,14 +26,14 @@ export default function Home() {
     fetchData()
   }, [])
 
-console.log(users)
-
   return (
-    <div>
+    <div className="flex flex-col items-center justify-center h-screen">
       <h1>Users</h1>
       <ul>
         {users.map((user) => (
-          <li key={user.id}>{user.User} - {user.created_at.toLocaleDateString()}</li>
+          
+          <li key={user.id}>{user.id} - {user.User} - {user.created_at.toLocaleDateString()}</li>
+
         ))}
       </ul>
     </div>
